@@ -4,7 +4,7 @@
 #include <iostream>
 
 //Adding a Abstract Base class to act as an interface for all the games
-class Base{
+class Game{
 public:
    virtual void play() = 0;
    virtual ~Game() {} 
