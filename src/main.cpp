@@ -1,5 +1,5 @@
 #include <iostream>
-#include <Game.h>
+#include "Game.h"
 #include "NumberGuessingGame.h"
 
 void ShowMenu(){
@@ -15,21 +15,21 @@ int main(){
         ShowMenu();
         std::cin>>choice_of_game;
 
-        if (choice_of_game = 2){
-            std::cout<<"Sad to see you go! Exiting the game console...";
+        if (choice_of_game == 2){
+            std::cout<<"Sad to see you go! Exiting the game console...\n";
+            break;
         }
         
-        if (choice_of_game = 1){
-            std::cout<<"You chose Number Guessing Game? Alright, let's dive into a game of pure luck!";
+        if (choice_of_game == 1){
+            std::cout<<"You chose Number Guessing Game? Alright, let's dive into a game of pure luck!\n";
             NumberGuessingGame game;
             game.play();
         }
         else{
-            std::cout<<"Invalid output";
+            std::cout<<"Invalid output\n";
         }
 
-        std::cout<<std::endl;
-        std::cout<<"Your game will now start!";     //This message prints after the user has entered their choice other than the exit option
+        std::cout<<"Your game will now start!\n";     //This message prints after the user has entered their choice other than the exit option
     }
     return 0;
 }

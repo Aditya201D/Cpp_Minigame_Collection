@@ -11,7 +11,7 @@ void NumberGuessingGame :: generate_random_number(){
 
 void NumberGuessingGame :: play(){
     int guess, tries = 0;
-    std::cout<<"**************NUMBER GUESSING GAME*******************";
+    std::cout<<"\n**************NUMBER GUESSING GAME*******************\n";
     std::cout<<"Details for the game: \n";
     std::cout<<"(a) Guess any randome integer from 1 to 10.\n";
     std::cout<<"(b) If your choice matches with the computer's choice, you win!\n";
