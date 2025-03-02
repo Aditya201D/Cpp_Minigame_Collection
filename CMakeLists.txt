@@ -19,5 +19,6 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 add_executable(minigames        #We have defined the executable with all the required program files
     src/main.cpp
     games/NumberGuessingGame.cpp
+    games/WordSearchGame.cpp
 )
 
